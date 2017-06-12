@@ -1,0 +1,39 @@
+/**
+   * Code by Aniket Chowdhury
+   * github.com/aniket-chowdhury
+   * aniketchowdhury@hotmail.com
+*/
+#include <iostream>
+
+using namespace std;
+
+typedef char tower;
+
+int towersOfHanoi(int n, tower x, tower z, tower y);
+
+int main ()
+{
+    int n;
+    cin>>n;
+    char x='x',y='y',z='z';
+    cout << towersOfHanoi (n,x,z,y);
+}
+
+/**
+   * Move n-1 disks from A to B
+   * Move top disk from A to C
+   * Move n-1 disks from B to C
+*/
+
+int towersOfHanoi( int n, tower x, tower z, tower y )
+{
+static int moves=0;
+    if (n>=1)
+    {
+         moves++;
+         towersOfHanoi(n-1,x,y,z);
+         cout << "Move top disk from tower " << x << " to tower " << z << endl;
+          towersOfHanoi(n-1,y,z,x);
+    }
+    return moves;
+}
