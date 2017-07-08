@@ -1,3 +1,13 @@
+/**
+    * Code by Aniket Chowdhury
+    * aniket_chowdhury@hotmail.com
+    * github.com/aniket-chowdhury
+    *
+    * Time Complexity : theta(n!)
+    *
+    * #Example 3^5->5-1=4,3*1=3->(3*3)*(3*3)=81*3=283
+*/
+
 #include <algorithm>
 #include <cassert>
 #include <iostream>
