@@ -155,7 +155,7 @@ int main()
             //file << i << std::endl;
             std::cout << i << std::endl;
             file1 << v.size() <<"\n";
-            print_to_file(i,v);
+            //print_to_file(i,v);
            /* for(const auto &elem : v)
                 {
                     file << elem << "\n";
