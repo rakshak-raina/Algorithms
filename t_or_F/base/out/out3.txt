@@ -1,0 +1,10 @@
+3
+FFF
+FFT
+FTF
+FTT
+TFF
+TFT
+TTF
+TTT
+
